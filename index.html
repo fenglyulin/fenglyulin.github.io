@@ -1,0 +1,441 @@
+<!--
+ * @Author: Jon Barron
+ * @Date: 2019-05-11 22:15:22
+ * @LastEditors: Fenlgyu Lin
+ * @LastEditTime: 2022-09-18
+ -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-45384067-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'UA-45384067-2');
+  </script>
+
+  <!-- <meta name=viewport content="width=800"> -->
+  <meta name=viewport content="width=device-width">
+  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
+  <style type="text/css">
+    /* Color scheme stolen from Sergey Karayev */
+
+    a {
+      color: #1772d0;
+      /* color: #07889b; */
+      text-decoration: none;
+    }
+
+    a:focus,
+    a:hover {
+      color: #e37222; /* #f09228; */
+      text-decoration: none;
+    }
+
+    body,
+    td,
+    th,
+    tr,
+    p,
+    a {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+
+    p.introduction {
+      line-height: 1.8;
+    }
+
+    strong {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 16px;
+    }
+
+    heading {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 22px;
+      color: #d62828;
+    }
+
+    heading2 {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 20px;
+    }
+
+    papertitle {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    name {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 32px;
+    }
+
+    .footer {
+      font-family: 'Lato', Verdana, Helvetica, sans-serif;
+      font-size: 14px;
+      opacity: 0.75;
+      color: #777;
+    }
+
+    .one {
+      width: 160px;
+      height: 160px;
+      position: relative;
+    }
+
+    .two {
+      width: 160px;
+      height: 160px;
+      position: absolute;
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    .fade {
+      transition: opacity .2s ease-in-out;
+      -moz-transition: opacity .2s ease-in-out;
+      -webkit-transition: opacity .2s ease-in-out;
+    }
+
+    span {
+      line-height: 1.5;
+    }
+
+    span.highlight {
+      background-color: #ffffd0;
+    }
+
+    span.artifact {
+      color:#6cb41b;
+      padding: 1px;
+    }
+
+    span.underline {
+      border-bottom:1px solid black;
+      padding-bottom:1px;
+    }
+
+    span.tldr {
+      color: #555555;
+    }
+
+    em.highlight {
+      color: #e37222;
+    }
+  </style>
+  <link rel="icon" type="image/png" href="images/fenglyu.ico">
+  <!-- <title>Fenglyu Lin, Software Engineer in Singapore</title> -->
+  <!-- <meta name="description" content="I am a second-year Ph.D. student of Computer Science at UIUC, working with Prof. Gang Wang. I focus on machine learning security, measurement, and explainable AI."> -->
+  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/academicons.min.css">
+</head>
+
+<body>
+  <table width="960" border="0" align="center" cellspacing="0" cellpadding="0">
+    <tr>
+      <td>
+        <!-- Intro Begin -->
+        <table width="100%" align="left" border="0" cellspacing="0" cellpadding="12" style="table-layout:fixed;">
+          <colgroup>
+            <col span="1" style="width: 23%;">
+            <col span="1" style="width: 77%;">  
+          </colgroup>
+          <tr>
+            <td valign="middle">
+              <img src="images/fenglyu.jpg" height="170px">
+              <p align=left>
+                <a href="data/Fenglyu CV.pdf"> <i class="ai ai-cv-square ai-2x"></i> </a> &nbsp;
+                <a href="https://github.com/colalinn"> <i class="fa fa-github-square fa-2x"></i> </a> &nbsp;
+                <!-- <a href="https://github.com/colalinn.github.io"> <i class='fas fa-blog'></i> </a> &nbsp; -->
+                <a href="https://www.linkedin.com/in/fenglyu-lin-202197243/"> <i class="fa fa-linkedin-square fa-2x"></i> </a> &nbsp;
+                <!-- <a href="https://scholar.google.com/citations?hl=en&user=FCNYLcUAAAAJ"> <i class="ai ai-google-scholar-square ai-2x"></i> </a> &nbsp; -->
+                <!-- <a href="https://twitter.com/whyisyoung/"> <i class="fa fa-twitter-square fa-2x"></i> </a> -->
+              </p>
+            </td>
+            <td valign="middle">
+              <p align="left">
+                <name>Fenglyu Lin &nbsp; (林峰吕) </name>
+              </p>
+              <p class="introduction">
+                I am currently a backend software engineer in <a href="https://shopee.sg/"></a>Shopee Singapore</a>. 
+                I was an undergraduate student majoring in information security <a href="https://en.whu.edu.cn/"></a>Wuhan University</a>. <br>
+                I am now interested in buiding high performance distributed web application and deep learning. <br>
+                My tech stack includes Go, Python, Java and C and I have passed over 200 questions in Leetcode. <br>
+                <!-- I have passed over 200 questions in Leetcode.  <br> -->
+                <!-- I focus on <em class="highlight">machine learning security, measurement, and explainable AI. </em> <br> -->
+                <!-- My advisor is <a href="https://gangw.web.illinois.edu/">Prof. Gang Wang</a>. <br> -->
+                <!-- I also work closely with <a href="http://xinyuxing.org">Prof. Xinyu Xing</a> and <a href="https://songlh.github.io">Prof. Linhai Song</a> from Penn State. -->
+                <!-- I'm on the industry job market! Please email me if you think I'd be a good fit for your team. -->
+              </p>
+
+              <hr style="height:5px; visibility:hidden;" />
+
+              <p class="introduction">Contact: fenglyu.lin@gmail.com <br>
+              <!-- Office: Room 4111, Thomas M. Siebel Center, Urbana, IL 61801 </p> -->
+            </td>
+          </tr>
+        </table>
+        <!-- Intro End -->
+
+        <!-- News Begin -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+          <tr>
+            <td>
+              <heading>News</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="10" style="table-layout:fixed;">
+          <colgroup>
+            <col span="1" style="width: 23%;">
+            <col span="1" style="width: 77%;">
+          </colgroup>
+          <tr>
+            <td valign="center">16/08/2021 </td>
+            <td valign="  center">
+            I joined <a href="https://shopee.sg/">Shopee</a> as a Software Engineer.
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">01/07/2021 </td>
+            <td valign="  center">
+            I graduated from <a href="https://en.whu.edu.cn/">Wuhan University</a> as a Bachelor in Engineering, Information Security.
+            </td>
+          </tr>
+        </table>
+        <!-- News End -->
+
+        <!-- Publications Begin -->
+        <!-- Publications End -->
+
+        <!-- Internship Begin -->
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="6">
+          <tr>
+            <td>
+              <heading>Internship</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="6" style="table-layout:fixed;">
+          <colgroup>
+                <col span="1" style="width: 23%;">
+                <col span="1" style="width: 77%;">
+          </colgroup>
+          <tr>
+            <td valign="center">
+              <a href="https://www.ist.psu.edu/"><span>Penn State</span></a>
+            </td>
+            <td valign="center">
+                <em>Research Intern</em>, Pennsylvania, US, 09/2017 – 02/2018
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+                <a href="https://www.xueba100.com/"><span>Xueba Jun</span></a>
+            </td>
+            <td valign="center">
+              <em>Search and Rank Intern</em>, Shanghai, China, 09/2016 – 10/2016
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+                <a href="http://english.pku.edu.cn/"><span>Peking University</span></a>
+            </td>
+            <td valign="center">
+              <em>Exploit Intern</em>, Beijing, China, 07/2015 – 08/2015
+              <em>Exploit Intern</em>, Beijing, China, 07/2015 – 08/2015
+              <em>Exploit Intern</em>, Beijing, China, 07/2015 – 08/2015
+            </td>
+          </tr>
+        </table> -->
+        <!-- Internship End -->
+
+        <!-- Awards Begin -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+          <tr>
+            <td>
+              <heading>Awards</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="6" style="table-layout:fixed;">
+          <colgroup>
+                <col span="1" style="width: 23%;">
+                <col span="1" style="width: 77%;">
+          </colgroup>
+          <tr>
+            <td valign="center"> 2021 </td>
+            <td>
+                <span>Oustanding Graduate, Wuhan University (Top 10%)</span>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center"> 2021 </td>
+            <td>
+                <span>Excellence Scholarship First Prize, School of Cyber Science And Engineering (top 5%)<span>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center"> 2018 - 2020 </td>
+            <td>
+                <span>Second Class Scholarship, Wuhan University (top 15%) (3 times)</span>
+            </td>
+          </tr>          
+          <tr>
+            <td valign="center"> 2018 - 2020 </td>
+            <td>
+                <span>National Endeavor Scholarship, China (top 20%) (3 times)</span>
+            </td>
+          </tr>
+        </table>
+        <!-- Awards End -->
+
+        
+        <!-- Preprints Begin -->
+        <table width="100%" align="center" border="0" cellspacing="0" cellpadding="10">
+          <tr>
+            <td>
+              <heading>What I am doing?</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="6" style="table-layout:fixed;">
+          <colgroup>
+                <col span="1" style="width: 23%;">
+                <col span="1" style="width: 77%;">
+          </colgroup>
+          <tr>
+              <td valign="center">
+              <em>Learning</em>
+            </td>
+            <td>
+                During work, I feel the importance of a solid foundation of computer science knowledge. Here's what I am learning: <br>
+                <span> CS-stack: 《Computer Systems: A Programmer's Perspective》《Designing Data-Intensive Applications》</span><br>
+                <span> Deep Learning: Stanford CS231n. </span><br>
+                <span> Distributed Systems: MIT 6.824. </span><br>
+            </td>
+          </tr>
+          <tr>
+            <td valign="center">
+             <em>Working</em>
+            </td>
+            <td>
+                The department I work for is Order Team which is a core development team in Shopee. <br> 
+                I am responsible for developing and maintaining the Fee Module as a PIC(Person In Control).
+            </td>
+          </tr>
+          <!-- <tr>
+            <td valign="center">
+            <em>Applying 23fall graduate</em>
+          </td>
+          <td>
+              <span> <a href="https://www.cell.com/patterns/home">Patterns (a data science journal by Cell Press)</a></span>, Reviewer
+          </td>
+        </tr> -->
+        </table>
+        <!-- Preprints End -->
+
+        <!-- Teaching Begin -->
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="6">
+          <tr>
+            <td>
+              <heading>Teaching</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="6" style="table-layout:fixed;">
+          <colgroup>
+                <col span="1" style="width: 23%;">
+                <col span="1" style="width: 77%;">
+          </colgroup>
+          <tr>
+            <td valign="center"> 2019 Spring </td>
+            <td>
+                <span>CS-4264 Principles of Computer Security</span>, Virginia Tech, Teaching Assistant
+            </td>
+          </tr>
+          <tr>
+            <td valign="center"> 2018 Fall </td>
+            <td>
+                <span>CS-3114 Data Structures and Algorithms</span>, Virginia Tech, Teaching Assistant
+            </td>
+          </tr>
+        </table> -->
+        <!-- Teaching End -->
+        <!-- Service Begin -->
+        <!-- <table width="100%" align="center" border="0" cellspacing="0" cellpadding="6">
+          <tr>
+            <td>
+              <heading>Professional Services</heading>
+            </td>
+          </tr>
+        </table>
+        <table width="100%" align="center" border="0" cellpadding="6" style="table-layout:fixed;">
+          <colgroup>
+                <col span="1" style="width: 23%;">
+                <col span="1" style="width: 77%;">
+          </colgroup>
+          <tr>
+            <td valign="center">
+              <papertitle>[Oakland'21]</papertitle>
+            </td>
+            <td>
+                <span> <a href="https://www.ieee-security.org/TC/SP2021/index.html">IEEE Symposium on Security and Privacy</a></span>, Student PC
+            </td>
+          </tr>
+          <tr>
+              <td valign="center">
+              <em>[Patterns'21]</em>
+            </td>
+            <td>
+                <span> <a href="https://www.cell.com/patterns/home">Patterns (a data science journal by Cell Press)</a></span>, Reviewer
+            </td>
+          </tr>
+        </table> -->
+        <!-- Service End -->
+
+        <!-- <br>
+        <table width="100%" align="center" border="0" cellpadding="6" style="table-layout:fixed; color: #888;">
+          <colgroup>
+                <col span="1" style="width: 23%;">
+                <col span="1" style="width: 77%;">
+          </colgroup>
+          <tr>
+            <td valign="center"> Miscellaneous </td>
+            <td>
+                I'm also a minimalism photographer: <a href="https://whyisyoung.com" target="_blank">whyisyoung.com</a>
+            </td>
+          </tr>
+        </table> -->
+
+        <table width="100%" align="center" border="0" cellpadding="6">
+          <tr>
+            <td width="100%" valign="center">
+              <p class="footer">
+                Design: <a href="https://jonbarron.info/" target="_blank" style="color: #777; font-size: 14px;">Jon Barron</a> and <a href="https://liminyang.web.illinois.edu/" target="_blank" style="color: #777; font-size: 14px;">Limin Yang</a> <br>
+                Last updated:
+                <script>
+                  const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+                  t = new Date(document.lastModified).toLocaleDateString(options)
+                  document.write(t);
+                </script>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>
